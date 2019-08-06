@@ -1,0 +1,39 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Upload</title>
+
+<style>
+    li {
+        margin-left: -50px;
+        border-bottom: 0.5px solid white;
+        width: 100vw;
+        color: white;
+        padding-left: 10px;
+    }
+    .success {
+        background-color: midnightblue;
+    }
+    .failed {
+        background-color: red;
+    }
+</style>
+</head>
+<body>
+
+{% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for category, message in messages %}
+      <li class="{{ category }}">{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+
+<form action="/" method=POST enctype=multipart/form-data>
+    <p><input type=file name=file><p>
+    <input type="submit" value = Upload>
+</form>
+</body>
+</html>
