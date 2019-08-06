@@ -1,11 +1,12 @@
 # Margin_removal_flask
-画像の余白を削除するwebアプリです。
-.png, .jpg, .bmpに対応しています。
+画像の余白を削除するwebアプリです。　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+.png, .jpg, .bmpに対応しています。　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
 Pillowを用いて背景と元の画像の境界を求めて切り抜いています。
 
 実行環境：python3.5
 
 ディレクトリの構造
+
  Margin_removal_flask
  ├── README.md
  ├── app.py
