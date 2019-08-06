@@ -8,26 +8,18 @@ Pillowを用いて背景と元の画像の境界を求めて切り抜いてい�
 ディレクトリの構造
 
  Margin_removal_flask
- 
  ├── README.md
- 
  ├── app.py
- 
  ├── static
- 
  │   └── img
- 
  │       └── crop_exeample.png
- 
  ├── templates
- 
  │   └── upload.html
- 
- └── uploads
- 
+ └── uploads 
      └── exeample.png
 
 ディレクトリの説明：
+
 　/templatesにはサイトのレイアウト等を行う"upload.html"があります。
   ・サイトのレイアウト関連はここに置きます。
   
